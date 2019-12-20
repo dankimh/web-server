@@ -1,0 +1,98 @@
+<html>
+    <style>
+        .logo {
+            position: absolute; top: 20px; left: 50%; transform: translate(-50%, 0%);
+            width: 96px; height: 32px;
+        }
+        .searchbar {
+            position: absolute; top: 70px; left: 50%; transform: translate(-50%, 0%);
+            height: 32px; width: 80%; background-color: black;
+            border-radius: 12px; overflow: hidden; border: 0.5px solid #cccccc;
+        }
+        .searchbar .text {
+            width: calc(100% - 30px);  height: 100%;
+        }
+        .searchbar .sub {
+            border:white;
+            position: absolute; right: 0; width: 35px; height: 100%;
+            background-color: #3b78e7;
+        }
+        .newslist {
+            position: relative;
+            margin-top:125px;
+        }
+        .newslist .news {
+            margin: 0px 20px 5px;
+            padding-top:10px;
+            padding-left:20px;
+            box-shadow:0px 2px 8px 0px rgba(0,0,0,0.3);
+            border-radius:10px;
+            height:100px;
+            position:relative;
+        }
+        .news .author {
+            font-size:13px;
+        }
+        .news .title {
+            font-weight: bold;
+            width:70%;
+            margin-left:20px;
+            margin-right: 10px;
+        }
+        .news .img {
+            
+            float:right;
+            position:absolute;
+            margin-left: 10px;
+            top:15px;
+            right:15px;
+        }
+        .news .img img {
+            border-radius:15px;
+            width:80px;
+            height:80px;
+        }
+        .news .date {
+            font-size: 13px;
+            position:absolute;
+            bottom:5px;
+            margin-left:20px;
+        }
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <title>사전 과제</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img class="logo" src="logo.png"/>
+        <form method="post" action="https://www.google.com">
+            <div class="searchbar">
+                <input class="text"/> <!-- add name, type attribute -->
+                <button class="sub"> <!-- add type attribute -->
+                    <svg focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                </button>
+            </div>
+        </form>
+        <div class="newslist">
+            <div class="news">
+                <div class="author">동아일보</div>
+                <div class="title">'삼성의 저주?' 삼성이 철수한 中휴대폰 혜주 공장 가보니...</div>
+                <div class="img">
+                    <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2019/12/11/98753226.2.jpg"/>
+                </div>
+                <div class="date">1일 전</div>
+            </div>
+            <div class="news">
+                <div class="author">동아일보</div>
+                <div class="title">'삼성의 저주?' 삼성이 철수한 中휴대폰 혜주 공장 가보니...</div>
+                <div class="img">
+                    <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2019/12/11/98753226.2.jpg"/>
+                </div>
+                <div class="date">1일 전</div>
+            </div>
+            <!-- add more -->
+        </div>
+    </body>
+</html>
